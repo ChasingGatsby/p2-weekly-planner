@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    background-color: rgb(215, 215, 209);
+}
+.createaccount {
+    margin-left: 10px;
+    background-color: rgb(155, 242, 242);
+}
+.dailyjokes{
+    margin-right: 10px;
+    background-color:rgb(202, 157, 245);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    margin-right: 77%;
+    height: 100vh;
+}
+.minicalender {
+    border: solid black;
+    height: 30vh;
+}
+.futuretodo {
+    border: solid black;
+    height: 50vh;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    border: solid black;
+    width: 77%;
+    margin-left: 23%;
+}
+body {
+    
+}
