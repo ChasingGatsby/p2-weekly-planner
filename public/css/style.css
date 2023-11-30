@@ -76,7 +76,7 @@ main {
     height: 80vh;
     width: 20%;
 }
-.to {
+.todo {
     position: absolute;
-    bottom: 10em;
+    top: 5em;
 }
