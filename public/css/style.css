@@ -3,14 +3,17 @@ header {
     flex-direction:row;
     justify-content: space-between;
     background-color: rgb(215, 215, 209);
+    height: 6vh;
 }
 .createaccount {
     margin-left: 10px;
     background-color: rgb(155, 242, 242);
+    border: solid black;
 }
 .dailyjokes{
     margin-right: 10px;
     background-color:rgb(202, 157, 245);
+    border: solid  black;
 }
 section {
     display: flex;
@@ -34,7 +37,46 @@ main {
     border: solid black;
     width: 77%;
     margin-left: 23%;
+   position: absolute;
+   top: 2.5em;
+   height: 10vh;
 }
-body {
-    
+.sunday {
+    border: solid  black;
+    height: 80vh;
+    width: 20%;
+}
+.monday {
+    border: solid black;
+    height: 80vh;
+    width: 15%;
+}
+.tuesday {
+    border: solid black;
+    height: 80vh;
+    width: 20%;
+}
+.wednsday {
+    border: solid black;
+    height: 80vh;
+    width: 20%;
+}
+.thursday {
+    border: solid black;
+    height: 80vh;
+    width: 20%;
+}
+.friday {
+    border: solid black;
+    height: 80vh;
+    width: 20%;
+}
+.saturday {
+    border: solid black;
+    height: 80vh;
+    width: 20%;
+}
+.to {
+    position: absolute;
+    bottom: 10em;
 }
