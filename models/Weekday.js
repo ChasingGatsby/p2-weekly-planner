@@ -3,14 +3,25 @@ const sequelize = require("../config/connection");
 
 class Weekday extends Model {}
 
-Weekday.init({
-  id: {
+Weekday.init(
+  {
+    id: {
     allowNull: false,
     primaryKey: true,
     autoIncrement: true,
-  },
-  day_name: {
+    },
+    day_name: {
     type: DataTypes.STRING,
     allowNull: false,
+    },
   },
-});
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'user',
+  }
+);
+
+module.exports = Weekday;
