@@ -23,4 +23,5 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
-res.status(200).json(userData);
+
+module.exports = router
