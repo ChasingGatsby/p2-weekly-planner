@@ -6,13 +6,14 @@ class Weekday extends Model {}
 Weekday.init(
   {
     id: {
-    allowNull: false,
-    primaryKey: true,
-    autoIncrement: true,
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
     },
     day_name: {
-    type: DataTypes.STRING,
-    allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: false,
     },
   },
   {
@@ -20,7 +21,7 @@ Weekday.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'weekday',
+    modelName: "weekday",
   }
 );
 
