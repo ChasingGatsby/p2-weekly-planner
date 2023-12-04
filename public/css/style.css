@@ -69,8 +69,15 @@ main {
 }
 
 #weeklabel {
+  display: flexbox;
     width:100%;
-    text-align:center
+    text-align:center;
+    height: 15%;
+}
+
+h2 {
+  position: relative;
+  top: 1.2em;
 }
 
 #weeklist {
