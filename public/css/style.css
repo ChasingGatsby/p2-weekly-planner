@@ -18,7 +18,7 @@ header {
 section {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: rgba(94, 170, 103, 0.521);
   height: 100%;
   width: 23%;
 }
@@ -89,4 +89,14 @@ main {
 
 .test {
   border: solid black;
+}
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("../images/CB1C343C-B5AD-456E-9ADF-23D8A886CD9E.jpeg");
+  /* Set a specific height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+opacity: 80%;
 }
