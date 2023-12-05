@@ -1,0 +1,13 @@
+[
+  {
+    "content": "Taxes",
+    "user_id": 1,
+    "day_id": 1
+  },
+  {
+    "content": "Dentist",
+    "user_id": 1,
+    "day_id": 1
+  },
+  { "content": "Kill myself", "user_id": 1, "day_id": 2 }
+]

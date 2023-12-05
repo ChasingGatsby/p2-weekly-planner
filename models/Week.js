@@ -12,12 +12,12 @@ Week.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    date: {
-      type: DataTypes.INTEGER,
+    start_date: {
+      type: DataTypes.DATE,
       allowNull: false,
     },
-    days: {
-      type: DataTypes.INTEGER,
+    end_date: {
+      type: DataTypes.DATE,
       allowNull: false,
     },
   },

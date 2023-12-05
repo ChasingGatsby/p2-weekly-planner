@@ -1,23 +1,23 @@
 [
   {
-    "dayname": "Sun"
+    "day_name": "Sun"
   },
   {
-    "dayname": "Mon"
+    "day_name": "Mon"
   },
   {
-    "dayname": "Tue"
+    "day_name": "Tue"
   },
   {
-    "dayname": "Wed"
+    "day_name": "Wed"
   },
   {
-    "dayname": "Thur"
+    "day_name": "Thur"
   },
   {
-    "dayname": "Fri"
+    "day_name": "Fri"
   },
   {
-    "dayname": "Sat"
+    "day_name": "Sat"
   }
 ]
