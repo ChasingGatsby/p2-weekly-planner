@@ -54,12 +54,12 @@ router.post("/register", async (req, res) => {
 
       res.status(200).json(userData);
     });
-  } 
+  }
 });
 
 router.post("/login", async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { email: req.body.email } });
+    const userData = await User.findOne({ where: { email: req.body.name } });
 
     if (!userData) {
       res

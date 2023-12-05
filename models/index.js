@@ -5,6 +5,7 @@ const Week = require("./Week");
 const Future = require("./Future");
 const Task = require("./Task");
 const Priority = require("./Priority");
+const Motivator = require("./Motivator");
 
 Weekday.hasMany(Day, {
   foreignKey: "day_id",
@@ -70,6 +71,15 @@ Priority.belongsTo(Day, {
   foreignKey: "day_id",
 });
 
+User.hasMany(Motivator, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
+
+Motivator.belongsTo(User, {
+  foreignKey: "user_id",
+});
+
 module.exports = {
   Weekday,
   Week,
@@ -77,4 +87,5 @@ module.exports = {
   Future,
   User,
   Task,
+  Motivator
 };

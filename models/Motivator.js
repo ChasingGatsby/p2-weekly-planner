@@ -27,7 +27,7 @@ Motivator.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "priority",
+    modelName: "motivator",
   }
 );
 
