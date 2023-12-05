@@ -17,7 +17,7 @@ Day.init(
       allowNull: false,
       defaultValue: DataTypes.NOW
     },
-    weekday_id: {
+    dayname_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {

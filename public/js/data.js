@@ -1,12 +1,17 @@
 const weekSelect = async () => {
-  const weekPicker = document.querySelector("#week-picker");
-  const selectedWeek = weekPicker.options[weekPicker.selectedIndex];
-  const weekID = selectedWeek.getAttribute("data=id");
+  const selectedWeek = document.querySelector("#week-picker");
+  const weekID =
+    selectedWeek.options[selectedWeek.selectedIndex].getAttribute("data-id");
 
-  const response = await fetch(`/api/${weekID}`, {
+  console.log(weekID);
+
+  const response = await fetch(`/planner/${weekID}`, {
     method: "GET",
     headers: { "Content-Type": "application/json" },
   });
+  if (response.ok) {
+    console.log(response);
+  }
 };
 
 document.querySelector("#week-picker").addEventListener("change", weekSelect);

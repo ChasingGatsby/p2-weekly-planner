@@ -1,10 +1,7 @@
-const withAuth = (req, res, next) => {
-  // If the user is not logged in, redirect the request to the login route
-  if (!req.session.logged_in) {
-    res.redirect("/login");
-  } else {
-    next();
-  }
+module.exports = {
+  format_date: (date) => {
+    const options = { month: "2-digit", day: "2-digit" };
+    const formattedDate = date.toLocaleDateString("en-us", options);
+    return formattedDate;
+  },
 };
-
-module.exports = withAuth;

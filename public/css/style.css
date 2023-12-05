@@ -8,6 +8,7 @@ header {
   font-size: 20px;;
 
 }
+
 .createaccount {
   background-color: rgb(155, 242, 242);
   border: solid black;
@@ -103,6 +104,10 @@ h5 {
 
 .text {
   height:38%;
+}
+
+li {
+  text-align: left;
 }
 
 .test {
