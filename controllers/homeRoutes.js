@@ -40,7 +40,7 @@ router.get("/planner", withAuth, async (req, res) => {
   }
 });
 
-router.get("/planner/:week_id", async (req, res) => {
+router.get("/planner/:week_id", withAuth, async (req, res) => {
   try {
     const { week_id } = req.params;
     const motivatorData = await Motivator.findAll({
