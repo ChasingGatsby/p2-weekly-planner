@@ -1,10 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
-
 const sequelize = require("../config/connection");
 
-class Day extends Model {}
+class Motivator extends Model {}
 
-Day.init(
+Motivator.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -12,23 +11,13 @@ Day.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    date: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
+    content: {
+      type: DataTypes.STRING,
     },
-    weekday_id: {
+    user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       references: {
-        model: "weekday",
-        key: "id",
-      },
-    },
-    week_id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: "week",
+        model: "user",
         key: "id",
       },
     },
@@ -38,8 +27,8 @@ Day.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "day",
+    modelName: "priority",
   }
 );
 
-module.exports = Day;
+module.exports = Motivator;

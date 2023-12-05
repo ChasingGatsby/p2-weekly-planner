@@ -2,9 +2,9 @@ const { Model, DataTypes } = require("sequelize");
 
 const sequelize = require("../config/connection");
 
-class FutureToDo extends Model {}
+class Future extends Model {}
 
-FutureToDo.init(
+Future.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -29,4 +29,4 @@ FutureToDo.init(
   }
 );
 
-module.exports = FutureToDo;
+module.exports = Future;

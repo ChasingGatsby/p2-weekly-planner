@@ -10,7 +10,7 @@ header {
   border: solid black;
 }
 .dailyjokes {
-  background-color: rgb(202, 157, 245);
+  background-color: rgb(94, 170, 103, 0.521);
   border: solid black;
   width: 20vw;
 }
@@ -69,8 +69,15 @@ main {
 }
 
 #weeklabel {
+  display: flexbox;
     width:100%;
-    text-align:center
+    text-align:center;
+    height: 15%;
+}
+
+h2 {
+  position: relative;
+  top: 1.3em;
 }
 
 #weeklist {
@@ -100,4 +107,3 @@ main {
   position: relative;
 opacity: 80%;
 }
-
