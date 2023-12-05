@@ -13,8 +13,9 @@ Day.init(
       autoIncrement: true,
     },
     date: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DATE,
       allowNull: false,
+      defaultValue: DataTypes.NOW
     },
     weekday_id: {
       type: DataTypes.INTEGER,

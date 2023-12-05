@@ -87,5 +87,6 @@ module.exports = {
   Future,
   User,
   Task,
-  Motivator
+  Motivator,
+  Priority,
 };

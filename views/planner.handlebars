@@ -112,56 +112,19 @@
       <li></li>
     </ul>
     <h2>
-      <label for="week-select">Current Week:</label>
-      <select name="weeks">
+      <label for="week-select" >Current Week:</label>
+      <select id="week-picker" name="weeks">
         <option>--Select a week</option>
         <option data-id="1"> 12/3 - 12/9 </option>
         <option data-id="2"> 12/10 - 12/16 </option>
         <option data-id="3"> 12/17 - 12/23 </option>
         <option data-id="4"> 12/24 - 12/30 </option>
         <option data-id="5">12/31 - 1/6</option>
-      </select></h2></div>
-  <div id="weeklist" class="flex-row">
-    <div class="test weekday">
-      <div>
-        <h3>Sun</h3>
-        <h4>Date</h4>
-      </div>
-      <div class="priority text"><h5>Priority:</h5></div>
-      <div class="todos text"><h5>To-Do:</h5></div>
-    </div>
-    <div class="test weekday">
-      <h3>Mon</h3>
-      <h4>Date</h4>
-      <div class="priority">Priority:</div>
-      <div class="todos">To-Do's</div></div>
-    <div class="test weekday">
-      <h3>Tue</h3>
-      <h4>Date</h4>
-      <div class="priority">Priority:</div>
-      <div class="todos">To-Do's</div></div>
-    <div class="test weekday">
-      <h3>Wed</h3>
-      <h4>Date</h4>
-      <div class="priority">Priority:</div>
-      <div class="todos">To-Do's</div></div>
-    <div class="test weekday">
-      <h3>Thu</h3>
-      <h4>Date</h4>
-      <div class="priority">Priority:</div>
-      <div class="todos">To-Do's</div></div>
-    <div class="test weekday">
-      <h3>Fri</h3>
-      <h4>Date</h4>
-      <div class="priority">Priority:</div>
-      <div class="todos">To-Do's</div></div>
-    <div class="test weekday">
-      <h3>Sat</h3>
-      <h4>Date</h4>
-      <div class="priority">Priority:</div>
-      <div class="todos">To-Do's</div></div>
+      </select></h2>
   </div>
-</div>
+  {{> weekdisplay}}
+
+<script src="/js/data.js"></script>
 
 {{! <section>
   <div class="weekday" id="sun">

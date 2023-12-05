@@ -2,13 +2,16 @@ const router = require("express").Router();
 const { User, Motivator, Future } = require("../models");
 
 router.get("/", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/home");
-  }
+  res.render("planner", {
+    logged_in: req.session.logged_in,
+  });
+});
+
+router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/home", async (req, res) => {
+router.get("/planner", async (req, res) => {
   try {
     const motivatorData = await Motivator.findAll({
       where: { user_id: req.session.user_id },
@@ -21,7 +24,11 @@ router.get("/home", async (req, res) => {
 
     const future = futureData.map((data) => data.get({ plain: true }));
 
-    res.render("planner", { future, motivators });
+    res.render("planner", {
+      motivators,
+      future,
+      logged_in: req.session.logged_in,
+    });
   } catch (err) {
     res.status(500).json(err);
   }

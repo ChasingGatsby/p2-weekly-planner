@@ -39,27 +39,10 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.post("/register", async (req, res) => {
-  try {
-    const { username, email, password } = req.body;
-
-    const user = await User.create({ username, email, password });
-    res.status(201).json({ message: "User registered successfully", user });
-  } catch (error) {
-    res.status(500).json({ message: "Error registering user", error });
-
-    req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
-
-      res.status(200).json(userData);
-    });
-  }
-});
-
 router.post("/login", async (req, res) => {
   try {
-    const userData = await User.findOne({ where: { email: req.body.name } });
+    const userData = await User.findOne({ where: { name: req.body.name } });
+    console.log(req.body.name)
 
     if (!userData) {
       res
