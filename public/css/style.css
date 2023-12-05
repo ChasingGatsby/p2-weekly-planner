@@ -4,7 +4,7 @@ header {
   justify-content: space-between;
   background-color: rgb(215, 215, 209);
   height: 6vh;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Klee One', cursive;
   font-size: 20px;;
 
 }
@@ -30,26 +30,26 @@ section {
   border: solid black;
   height: 30vh;
   text-align: center;
-  font-family: 'Oooh Baby', cursive;
+  font-family: 'Klee One', cursive;
 }
 #keymotivators {
   border: solid black;
   height: 30vh;
   text-align: center;
-  font-family: 'Oooh Baby', cursive;
+  font-family: 'Klee One', cursive;
 }
 #futuretodo {
   border: solid black;
   height: 50vh;
   text-align: center;
-  font-family: 'Oooh Baby', cursive;
+  font-family: 'Klee One', cursive;
 }
 main {
   margin-left: 0;
   height: 94vh;
   width:100vw;
   overflow:hidden;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Klee One', cursive;
 
 }
 
@@ -82,21 +82,23 @@ main {
     width:100%;
     text-align:center;
     height: 15%;
-    font-family: 'Oooh Baby', cursive;
-
+    font-family: 'Klee One', cursive;
 }
 
 h2 {
   position: relative;
-  top: 1.0em;
-  font-size: 50px;
+  top: 1.2em;
+  font-size: 40px;
 }
 h4 {
-  font-size: 30px;
+  font-size: 20px;
 }
 #weeklist {
     justify-content: space-evenly;
     height: 100%;
+}
+h5 {
+  font-size: 15px;
 }
 
 .text {
