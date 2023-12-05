@@ -85,13 +85,8 @@ h2 {
     height: 100%;
 }
 
-.todo {
-  position: absolute;
-  top: 10em;
-  border: solid black;
-  width: 11vw;
-  margin-left: -1px;
-  text-align: center;
+.text {
+  height:38%;
 }
 
 .test {
@@ -106,4 +101,12 @@ h2 {
   background-size: cover;
   position: relative;
 opacity: 80%;
+}
+
+.snowflake {
+  position: fixed;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+  width: 15px;
 }
