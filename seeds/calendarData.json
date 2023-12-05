@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2023-12-3",
+    "weekday_id": 1,
+    "week_id": 1
+  },
+  {
+    "date": "2023-12-4",
+    "weekday_id": 2,
+    "week_id": 1
+  },
+  {
+    "date": "2023-12-5",
+    "weekday_id": 3,
+    "week_id": 1
+  },
+  {
+    "date": "2023-12-6",
+    "weekday_id": 4,
+    "week_id": 1
+  },
+  {
+    "date": "2023-12-7",
+    "weekday_id": 5,
+    "week_id": 1
+  },
+  {
+    "date": "2023-12-8",
+    "weekday_id": 6,
+    "week_id": 1
+  },
+  {
+    "date": "2023-12-9",
+    "weekday_id": 7,
+    "week_id": 1
+  }
+]
