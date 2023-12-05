@@ -4,6 +4,9 @@ header {
   justify-content: space-between;
   background-color: rgb(215, 215, 209);
   height: 6vh;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;;
+
 }
 .createaccount {
   background-color: rgb(155, 242, 242);
@@ -21,27 +24,33 @@ section {
   background-color: rgba(94, 170, 103, 0.521);
   height: 100%;
   width: 23%;
+  
 }
 #minicalender {
   border: solid black;
   height: 30vh;
   text-align: center;
+  font-family: 'Oooh Baby', cursive;
 }
 #keymotivators {
   border: solid black;
   height: 30vh;
   text-align: center;
+  font-family: 'Oooh Baby', cursive;
 }
 #futuretodo {
   border: solid black;
   height: 50vh;
   text-align: center;
+  font-family: 'Oooh Baby', cursive;
 }
 main {
   margin-left: 0;
   height: 94vh;
   width:100vw;
   overflow:hidden;
+  font-family: 'Shadows Into Light', cursive;
+
 }
 
 /* main {
@@ -73,13 +82,18 @@ main {
     width:100%;
     text-align:center;
     height: 15%;
+    font-family: 'Oooh Baby', cursive;
+
 }
 
 h2 {
   position: relative;
-  top: 1.3em;
+  top: 1.0em;
+  font-size: 50px;
 }
-
+h4 {
+  font-size: 30px;
+}
 #weeklist {
     justify-content: space-evenly;
     height: 100%;
