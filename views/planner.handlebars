@@ -112,16 +112,24 @@
       <li></li>
     </ul>
     <h2>
-      <label for="week-picker" >Current Week:</label>
-      <select id="week-picker" name="weeks">
-        <option>--Select a week</option>
-        <option class="week-option" data-id="1"> 12/3 - 12/9 </option>
-        <option id="week-option" data-id="2"> 12/10 - 12/16 </option>
-        <option id="week-option" data-id="3"> 12/17 - 12/23 </option>
-        <option id="week-option" data-id="4"> 12/24 - 12/30 </option>
-        <option id="week-option" data-id="5">12/31 - 1/6</option>
-      </select></h2>
+      <label for="week-picker">Current Week:</label>
+      <select id="week-picker" name="weeks" onchange="weekSwitch(this)">
+        <option>-Select a week-</option>
+        <option class="week-option" value="/planner/1"> 12/3 - 12/9 </option>
+        <option class="week-option" value="/planner/2"> 12/10 - 12/16 </option>
+        <option class="week-option" value="/planner/3"> 12/17 - 12/23 </option>
+        <option class="week-option" value="/planner/4"> 12/24 - 12/30 </option>
+        <option class="week-option" value="/planner/5">12/31 - 1/6</option>
+      </select>
+    </h2>
   </div>
+
   {{> weekdisplay}}
 
-<script src="/js/data.js"></script>
+  <script>
+    function weekSwitch(selectElement) { var selectedOption =
+    selectElement.options[selectElement.selectedIndex]; var url =
+    selectedOption.value; if (url) { window.location.href = url; } }
+  </script>
+
+</div>
