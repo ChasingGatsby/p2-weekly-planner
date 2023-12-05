@@ -18,6 +18,7 @@ Day.belongsTo(Weekday, {
 Week.hasMany(Day, {
   foreignKey: "week_id",
   onDelete: "CASCADE",
+  as: "weekDays",
 });
 
 Day.belongsTo(Week, {
