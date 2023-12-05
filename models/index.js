@@ -8,12 +8,12 @@ const Priority = require("./Priority");
 const Motivator = require("./Motivator");
 
 Weekday.hasMany(Day, {
-  foreignKey: "day_id",
+  foreignKey: "dayname_id",
   onDelete: "CASCADE",
 });
 
 Day.belongsTo(Weekday, {
-  foreignKey: "day_id",
+  foreignKey: "dayname_id",
 });
 
 Week.hasMany(Day, {

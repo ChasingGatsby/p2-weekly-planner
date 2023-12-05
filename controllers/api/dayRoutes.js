@@ -4,12 +4,12 @@ const { Weekday, Priority, Day, Task, Week } = require("../../models");
 // extracting the right week
 router.get("/:id", async (req, res) => {
   try {
-    const weekData = Day.findAll({
-      where: { week_id: req.params.id, user_id: req.session.user_id },
+    const weekData = await Day.findAll({
+      where: { week_id: req.params.id },
       include: [
         { model: Task, attributes: ["content"] },
-        { model: Priority, attibutes: ["content"] },
-        { model: Weekday, attributes: ["name"] },
+        { model: Priority, attributes: ["content"] },
+        { model: Weekday, attributes: ["day_name"] },
       ],
     });
     res.status(200).json(weekData);

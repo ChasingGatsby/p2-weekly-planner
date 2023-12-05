@@ -112,47 +112,16 @@
       <li></li>
     </ul>
     <h2>
-      <label for="week-select" >Current Week:</label>
+      <label for="week-picker" >Current Week:</label>
       <select id="week-picker" name="weeks">
         <option>--Select a week</option>
-        <option data-id="1"> 12/3 - 12/9 </option>
-        <option data-id="2"> 12/10 - 12/16 </option>
-        <option data-id="3"> 12/17 - 12/23 </option>
-        <option data-id="4"> 12/24 - 12/30 </option>
-        <option data-id="5">12/31 - 1/6</option>
+        <option class="week-option" data-id="1"> 12/3 - 12/9 </option>
+        <option id="week-option" data-id="2"> 12/10 - 12/16 </option>
+        <option id="week-option" data-id="3"> 12/17 - 12/23 </option>
+        <option id="week-option" data-id="4"> 12/24 - 12/30 </option>
+        <option id="week-option" data-id="5">12/31 - 1/6</option>
       </select></h2>
   </div>
   {{> weekdisplay}}
 
 <script src="/js/data.js"></script>
-
-{{! <section>
-  <div class="weekday" id="sun">
-    <p>Sunday</p>
-    <div class="todo">To Do:</div>
-  </div>
-  <div class="weekday" id="mon">
-    <p>Monday</p>
-    <div class="todo">To Do:</div>
-  </div>
-  <div class="weekday" id="tue">
-    <p>Tuesday</p>
-    <div class="todo">To Do:</div>
-  </div>
-  <div class="weekday" id="wed">
-    <p>Wednesday</p>
-    <div class="todo">To Do:</div>
-  </div>
-  <div class="weekday" id="thurs">
-    <p>Thursday</p>
-    <div class="todo">To Do:</div>
-  </div>
-  <div class="weekday" id="fri">
-    <p>Friday</p>
-    <div class="todo">To Do:</div>
-  </div>
-  <div class="weekday" id="sat">
-    <p>Saturday</p>
-    <div class="todo">To Do:</div>
-  </div>
-</section> }}
