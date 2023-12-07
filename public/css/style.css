@@ -150,8 +150,9 @@ li:hover .del {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  opacity: 80%;
+  /* opacity: 80%; */
   width: 100%;
+  margin: 0;
 }
 
 .popup {
@@ -190,12 +191,17 @@ li:hover .del {
   box-shadow: 0 0 5px 0 ; 
   border-style: inset;
 } */
-
+.login {
+  text-align: end;
+  margin-right: 35%;
+  color: #000;
+}
 .login-form {
   position: relative;
   top: 1em;
   font-size: 40px;
   width: 50%;
+  margin-left: 50%;
 }
 .signup-form {
   position: relative;
