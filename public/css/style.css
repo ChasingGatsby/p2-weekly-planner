@@ -142,6 +142,17 @@ li:hover .del {
   position: relative;
   opacity: 80%;
 }
+.hero-image2 {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("../images/login.jpeg");
+  /* Set a specific height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 80%;
+  width: 100%;
+}
 
 .popup {
   width: min-content;
