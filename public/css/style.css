@@ -120,6 +120,15 @@ li {
   transition: opacity 0.3 ease-in-out;
 }
 
+.del {
+  opacity: 0;
+  transition: opacity 0.3 ease-in-out;
+}
+
+li:hover .del {
+  opacity: 1;
+}
+
 .test {
   border: solid black;
 }
@@ -137,8 +146,8 @@ li {
 .popup {
   width: min-content;
   position: absolute;
-  top:100%;
-  z-index:1
+  top: 100%;
+  z-index: 1;
 }
 
 #snowflakeContainer {
@@ -171,16 +180,15 @@ li {
   border-style: inset;
 } */
 
-
 .login-form {
   position: relative;
-  top: 1.0em;
+  top: 1em;
   font-size: 40px;
   width: 50%;
 }
 .signup-form {
   position: relative;
-  top: 1.0em;
+  top: 1em;
   font-size: 40px;
   width: 50%;
 }
