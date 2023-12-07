@@ -7,7 +7,6 @@ header {
   font-family: "Klee One", cursive;
   font-size: 20px;
 }
-
 .createaccount {
   background-color: rgb(155, 242, 242);
   border: solid black;
@@ -126,7 +125,7 @@ li {
 }
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../images/CB1C343C-B5AD-456E-9ADF-23D8A886CD9E.jpeg");
+  background-image: url("../images/background.jpeg");
   /* Set a specific height */
   background-position: center;
   background-repeat: no-repeat;
