@@ -158,3 +158,29 @@ li {
   width: 15px;
   height: 15px;
 }
+
+/* .login-form {
+  border: solid black;
+  background: fixed;
+  background: no-repeat;
+  background-image: url('login.jpg');
+  background-color: gainsboro;
+  backdrop-filter: blur(10px);
+  opacity: 20%;
+  box-shadow: 0 0 5px 0 ; 
+  border-style: inset;
+} */
+
+
+.login-form {
+  position: relative;
+  top: 1.0em;
+  font-size: 40px;
+  width: 50%;
+}
+.signup-form {
+  position: relative;
+  top: 1.0em;
+  font-size: 40px;
+  width: 50%;
+}
