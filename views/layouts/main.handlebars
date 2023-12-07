@@ -6,27 +6,32 @@
     <link rel="stylesheet" href="/css/jass.css" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/lights.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap"
+      rel="stylesheet"
+    />
+
   </head>
   <body>
     <header>
       <nav class="display-flex align-center test mx-2">
         <a href="/"><button class="btn">Home</button></a>
-        <a href="/planner"><button class="btn">Planner</button></a>
+        <a href="/planner/1"><button class="btn">Planner</button></a>
         {{#if logged_in}}
-            <button class="btn" id="logout">Logout</button>
+          <button class="btn" id="logout">Logout</button>
         {{else}}
-          <a href="/login"><button
+          <a href="/"><button
               id="login"
               class="btn"
             >Login/Register</button></a>{{/if}}
       </nav>
-      <div class="dailyjokes">Daily Jokes</div>
+      {{#if logged_in}}
+        <div class="dailyjokes"><h4>Welcome, {{user}}!</h4></div>
+      {{/if}}
     </header>
 
     <main class="test flex-row hero-image">{{{body}}}</main>

@@ -11,12 +11,6 @@ const {
 const withAuth = require("../utils/auth");
 
 router.get("/", (req, res) => {
-  res.render("planner", {
-    logged_in: req.session.logged_in,
-  });
-});
-
-router.get("/login", (req, res) => {
   res.render("login");
 });
 
@@ -34,6 +28,7 @@ router.get("/planner", withAuth, async (req, res) => {
       motivators,
       future,
       logged_in: req.session.logged_in,
+      user: req.session.username
     });
   } catch (err) {
     res.status(500).json(err);
@@ -68,6 +63,7 @@ router.get("/planner/:week_id", withAuth, async (req, res) => {
       fullWeek,
       week_id,
       logged_in: req.session.logged_in,
+      user: req.session.username
     });
   } catch (err) {
     res.status(500).json(err);
