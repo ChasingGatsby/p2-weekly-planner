@@ -11,7 +11,8 @@ const loginFormHandler = async (event) => {
       headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
-      document.location.replace("/planner/1");
+      // document.location.replace("/planner/1");
+      window.location.replace("/planner/1")
     } else {
       alert(response.statusText);
     }
