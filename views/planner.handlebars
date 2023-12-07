@@ -4,7 +4,7 @@
     <h4>Key Motivators:</h4>
     <ul>
       {{#each motivators}}
-        <li data-id="{{id}}">{{content}}</li>
+        <li data-id="{{id}}">{{content}}<span class="delete-motive del">❌</span></li>
       {{/each}}
     </ul>
     <a href="/motivator/"><button class="edit-btn">Add</button></a>
@@ -13,7 +13,7 @@
     <h4>Future To-Do's:</h4>
     <ul>
       {{#each future}}
-        <li data-id="{{id}}">{{content}}</li>
+        <li data-id="{{id}}">{{content}}<span class="delete-future del">❌</span></li>
       {{/each}}
     </ul>
     <a href="/future"><button class="edit-btn add-future">Add</button></div></a>
@@ -131,5 +131,6 @@
     selectElement.options[selectElement.selectedIndex]; var url =
     selectedOption.value; if (url) { window.location.href = url; } }
   </script>
+<script src="/js/delete.js"></script>
 
 </div>

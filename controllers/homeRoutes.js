@@ -29,8 +29,8 @@ router.get("/planner/:week_id", withAuth, async (req, res) => {
     const weekData = await Day.findAll({
       where: { week_id },
       include: [
-        { model: Task, attributes: ["content"] },
-        { model: Priority, attributes: ["content"] },
+        { model: Task, attributes: ["id", "content"] },
+        { model: Priority, attributes: ["id", "content"] },
         { model: Weekday, attributes: ["day_name"] },
       ],
     });
@@ -60,12 +60,12 @@ router.get("/future", (req, res) => {
 
 router.get("/todo/:id", (req, res) => {
   const id = req.params.id;
-  res.render("todo", {id});
+  res.render("todo", { id });
 });
 
 router.get("/priority/:id", (req, res) => {
   const id = req.params.id;
-  res.render("priority", {id});
+  res.render("priority", { id });
 });
 
 module.exports = router;
