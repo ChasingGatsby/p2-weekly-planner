@@ -5,55 +5,27 @@
         <h3>{{weekday.day_name}}</h3>
         <h4>{{format_date date}}</h4>
       </div>
-      <div class="priority text">
+      <div class="list text">
         <h5>Priority:</h5>
         <ul>
           {{#each priorities}}
-            <li>{{content}}</li>
+            <li data-id="{{id}}">{{content}}</li>
           {{/each}}
         </ul>
+        <a href="/priority/{{id}}"><button
+            class="edit-btn add-priority"
+          >Add</button></a>
       </div>
-      <div class="todos text">
+      <div class="list text">
         <h5>To-Do:</h5>
         <ul>
           {{#each tasks}}
-            <li>{{content}}</li>
+            <li data-id="{{id}}">{{content}}</li>
           {{/each}}
         </ul>
+        <a href="/todo/{{id}}"><button class="edit-btn add-todo">Add</button></a>
       </div>
     </div>
   {{/each}}
-
-  {{! <div class="test weekday">
-    <h3>Mon</h3>
-    <h4>Date</h4>
-    <div class="priority">Priority:</div>
-    <div class="todos">To-Do's</div></div>
-  <div class="test weekday">
-    <h3>Tue</h3>
-    <h4>Date</h4>
-    <div class="priority">Priority:</div>
-    <div class="todos">To-Do's</div></div>
-  <div class="test weekday">
-    <h3>Wed</h3>
-    <h4>Date</h4>
-    <div class="priority">Priority:</div>
-    <div class="todos">To-Do's</div></div>
-  <div class="test weekday">
-    <h3>Thu</h3>
-    <h4>Date</h4>
-    <div class="priority">Priority:</div>
-    <div class="todos">To-Do's</div></div>
-  <div class="test weekday">
-    <h3>Fri</h3>
-    <h4>Date</h4>
-    <div class="priority">Priority:</div>
-    <div class="todos">To-Do's</div></div>
-  <div class="test weekday">
-    <h3>Sat</h3>
-    <h4>Date</h4>
-    <div class="priority">Priority:</div>
-    <div class="todos">To-Do's</div></div>
-}}
 
 </div>

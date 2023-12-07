@@ -18,7 +18,7 @@ router.get("/", withAuth, async (req, res) => {
 });
 
 // Need to add day_id from fetch request
-router.post("/", withAuth, async (req, res) => {
+router.post("/:id", withAuth, async (req, res) => {
   try {
     const newTask = await Task.create({
       ...req.body,

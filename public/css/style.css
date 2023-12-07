@@ -4,9 +4,8 @@ header {
   justify-content: space-between;
   background-color: rgb(215, 215, 209);
   height: 6vh;
-  font-family: 'Klee One', cursive;
-  font-size: 20px;;
-
+  font-family: "Klee One", cursive;
+  font-size: 20px;
 }
 
 .createaccount {
@@ -25,65 +24,61 @@ section {
   background-color: rgba(94, 170, 103, 0.521);
   height: 100%;
   width: 23%;
-  
 }
 #minicalender {
   border: solid black;
   height: 30vh;
   text-align: center;
-  font-family: 'Klee One', cursive;
+  font-family: "Klee One", cursive;
 }
 #keymotivators {
   border: solid black;
   height: 30vh;
   text-align: center;
-  font-family: 'Klee One', cursive;
+  font-family: "Klee One", cursive;
+  position: relative;
 }
 #futuretodo {
   border: solid black;
   height: 50vh;
   text-align: center;
-  font-family: 'Klee One', cursive;
+  font-family: "Klee One", cursive;
+  position: relative;
 }
+
+#keymotivators:hover .edit-btn {
+  opacity: 1;
+}
+
+#futuretodo:hover .edit-btn {
+  opacity: 1;
+}
+
 main {
   margin-left: 0;
   height: 94vh;
-  width:100vw;
-  overflow:hidden;
-  font-family: 'Klee One', cursive;
-
+  width: 100vw;
+  overflow: hidden;
+  font-family: "Klee One", cursive;
 }
 
-/* main {
-  display: flex;
-  flex-direction: row;
-  background-color: yellow;
-  border: solid black;
-  width: 76.97vw;
-  margin-left: 23%;
-  position: absolute;
-  top: 3.24em;
-  height: 92vh;
-} */
-
 .weekday {
-    width:14%;
-    text-align:center;
-    height: 100%;
-
+  width: 14%;
+  text-align: center;
+  height: 100%;
 }
 
 #fullweek {
-    width:76%;
-    height: 100%;
+  width: 76%;
+  height: 100%;
 }
 
 #weeklabel {
   display: flexbox;
-    width:100%;
-    text-align:center;
-    height: 15%;
-    font-family: 'Klee One', cursive;
+  width: 100%;
+  text-align: center;
+  height: 15%;
+  font-family: "Klee One", cursive;
 }
 
 h2 {
@@ -95,19 +90,35 @@ h4 {
   font-size: 20px;
 }
 #weeklist {
-    justify-content: space-evenly;
-    height: 100%;
+  justify-content: space-evenly;
+  height: 100%;
 }
 h5 {
   font-size: 15px;
 }
 
 .text {
-  height:38%;
+  height: 38%;
 }
 
 li {
   text-align: left;
+}
+
+.list {
+  position: relative;
+}
+
+.list:hover .edit-btn {
+  opacity: 1;
+}
+
+.edit-btn {
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3 ease-in-out;
 }
 
 .test {
@@ -121,7 +132,14 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-opacity: 80%;
+  opacity: 80%;
+}
+
+.popup {
+  width: min-content;
+  position: absolute;
+  top:100%;
+  z-index:1
 }
 
 #snowflakeContainer {

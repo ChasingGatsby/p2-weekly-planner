@@ -11,7 +11,7 @@ const loginFormHandler = async (event) => {
       headers: { "Content-Type": "application/json" },
     });
     if (response.ok) {
-      window.location.replace("/planner/1");
+      document.location.replace("/planner/1");
     } else {
       alert(response.statusText);
     }
@@ -33,7 +33,7 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      window.location.replace("/planner/1");
+      document.location.replace("/planner/1");
     } else {
       alert(response.statusText);
     }
