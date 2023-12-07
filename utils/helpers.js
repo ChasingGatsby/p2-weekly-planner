@@ -4,4 +4,9 @@ module.exports = {
     const formattedDate = date.toLocaleDateString("en-us", options);
     return formattedDate;
   },
+  user_eq: (a, b, options) => {
+    if (a == b) {
+      return options.fn(this);
+    }
+  },
 };

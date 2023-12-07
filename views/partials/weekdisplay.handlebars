@@ -9,7 +9,11 @@
         <h5>Priority:</h5>
         <ul>
           {{#each priorities}}
-            <li data-id="{{id}}">{{content}}<span class="delete-prio del">❌</span></li>
+            {{#user_eq user_id current_user_id}}
+              <li data-id="{{id}}">{{content}}<span
+                  class="delete-prio del"
+                >❌</span></li>
+            {{/user_eq}}
           {{/each}}
         </ul>
         <a href="/priority/{{id}}"><button
@@ -20,10 +24,16 @@
         <h5>To-Do:</h5>
         <ul>
           {{#each tasks}}
-            <li data-id="{{id}}">{{content}}<span class="delete-todo del">❌</span></li>
+            {{#user_eq user_id current_user_id}}
+              <li data-id="{{id}}">{{content}}<span
+                  class="delete-todo del"
+                >❌</span></li>
+            {{/user_eq}}
           {{/each}}
         </ul>
-        <a href="/todo/{{id}}"><button class="edit-btn add-todo">Add</button></a>
+        <a href="/todo/{{id}}"><button
+            class="edit-btn add-todo"
+          >Add</button></a>
       </div>
     </div>
   {{/each}}
