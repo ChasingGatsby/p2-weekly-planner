@@ -12,9 +12,9 @@ header {
   border: solid black;
 }
 .dailyjokes {
-  background-color: rgb(94, 170, 103, 0.521);
   border: solid black;
   width: 20vw;
+  vertical-align: middle;
 }
 
 section {
@@ -68,7 +68,7 @@ main {
 }
 
 #fullweek {
-  width: 76%;
+  width: 77%;
   height: 100%;
 }
 
@@ -192,3 +192,10 @@ li:hover .del {
   font-size: 40px;
   width: 50%;
 }
+
+.custom-btn {
+  background-color: #bc4749;
+  color: white;
+  border: solid black;
+}
+

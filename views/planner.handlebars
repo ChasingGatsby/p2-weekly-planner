@@ -1,5 +1,24 @@
 <section id="sidebar">
-  <div id="minicalender"><h4>Mini Calendar</h4></div>
+
+  <div id="settings" class="test">
+     {{#if logged_in}}
+    <h4 class ="text-center">Settings</h4>
+   
+    <div class="container text-center flex-column">
+      <div>
+      <input type="checkbox" id="holiday">
+      <label for="holiday"><p>Tired of the season?</p></label>
+      </div>
+      <select id="theme-picker" name="themes" class="mb-4">
+        <option>-Select a Theme-</option>
+        <option class="week-option" value="christmas">CHRISTMAS</option>
+        <option class="week-option" value="autumn">SNOW IN AUTUMN???</option>
+        <option class="week-option" value="happy">NON-DESCRIPT HAPPYTIME</option>
+        <option class="week-option" value="cyberpunk">CYBERPUNK???</option>
+      </select>
+    </div>
+    {{/if}}
+  </div>
   <div id="keymotivators">
     <h4>Key Motivators:</h4>
     <ul>
@@ -16,12 +35,13 @@
         <li data-id="{{id}}">{{content}}<span class="delete-future del">❌</span></li>
       {{/each}}
     </ul>
-    <a href="/future"><button class="edit-btn add-future">Add</button></div></a>
+    <a href="/future"><button class="edit-btn add-future">Add</button></a>
+  </div>
 </section>
 
 <div id="fullweek" class="test">
-  <div class="test" id="weeklabel">
-    <ul class="wire">
+  <div id="weeklabel">
+    <ul class="wire" id="wire">
       <li></li>
       <li></li>
       <li></li>
@@ -132,6 +152,8 @@
     selectedOption.value; if (url) { window.location.href = url; } }
   </script>
 <script src="/js/delete.js"></script>
+<script src="/js/theme.js"></script>
+
 
 
 </div>
