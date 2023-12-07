@@ -8,7 +8,6 @@ header {
   font-size: 20px;;
 
 }
-
 .createaccount {
   background-color: rgb(155, 242, 242);
   border: solid black;
@@ -106,22 +105,34 @@ h5 {
   height:38%;
 }
 
-li {
-  text-align: left;
-}
-
 .test {
   border: solid black;
 }
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: url("../images/CB1C343C-B5AD-456E-9ADF-23D8A886CD9E.jpeg");
+  background-image: url("../images/background.jpeg");
   /* Set a specific height */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-opacity: 80%;
+  opacity: 80%;
+  /* background-color: rgba(0,0,0,0.2); */
+}
+.hero-image2 {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: url("../images/login.jpeg");
+  /* Set a specific height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  /* opacity: 90%; */
+  /* background-color: rgba(0,0,0,.3); */
+}
+.logindiv {
+  width: 100vw;
 }
 
 #snowflakeContainer {
@@ -141,3 +152,16 @@ opacity: 80%;
   width: 15px;
   height: 15px;
 }
+/* .login-form {
+  border: solid black;
+  background: fixed;
+  background: no-repeat;
+  background-image: url('login.jpg');
+  background-color: gainsboro;
+  backdrop-filter: blur(10px);
+  opacity: 20%;
+  box-shadow: 0 0 5px 0 ; 
+  border-style: inset;
+} */
+
+
